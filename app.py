@@ -11,5 +11,4 @@ sock.listen(5)
 while True:  
     connection,address = sock.accept()  
     buf = connection.recv(1024)
-    print(buf)
     connection.send(buf)
